@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>menu page</title>
+	<style>
+
+		
+		*{
+			font-family: Open Sans, sans-serif;
+		}
+		body, ul, li{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: #f7f7f7;
+		}
+		header{
+			background-color: #e5e5e5;
+			padding: 20px 0;
+		}
+		 .wrapper{
+			width: 96%;
+			padding: 0 2%;
+			margin: 0 auto;
+		}
+		header h1.logo{
+			margin: 0;
+			float: left;
+			width: 300px;
+			background: url(images/logo4.jpg)no-repeat;
+			height:44px;
+		
+		}
+		header:after{
+			display: block;
+			content: "";
+			clear: both;
+		}
+		header nav{
+			float: right;
+		}
+		header nav li{
+			list-style-type: none;
+			float: left;
+			margin-left: 20px;
+			margin-top: 10px;
+		}
+		header nav li a{
+			text-decoration: none;
+			color: black;
+			font-size: 20px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		header nav li a:hover{
+			background-color: darkgrey;
+		}
+		
+		.main-banner img{
+			width: 100%;
+		}
+		.main-banner{
+			height: 500px;
+			overflow: hidden;
+		}
+		.menus{
+			
+			height: 150px;
+			text-align: center;
+			overflow: hidden;
+			margin-top: 0;
+			
+
+		}
+	    	
+		.menu{
+			margin-top: 40px;
+		}
+		.menu li{
+			list-style-type: none;
+			width: 48%;
+			float: left;
+
+			
+		}
+		.menu li h1{
+			font-size: 30px;
+			line-height: 1.6em;
+		}
+		.menu li p{
+			font-size: 20px;
+			color: #333;
+			line-height: 1.6em;
+		}
+		.menu:after{
+			display: block;
+			content: "";
+			clear: both;
+		}
+		.foodgallery{
+			border-top: 2px solid #333;
+			margin-top: 30px;
+			padding-top: 30px;
+
+		}
+		.foodgallery h2{
+			text-transform: uppercase;
+			font-size: 25px;
+			margin-bottom: 40px;
+		}
+		.foodgallery li{
+			list-style-type: none;
+			float: left;
+			width: 23%;
+		}
+		.foodgallery li img{
+			width: 100%;
+			height: 250px;
+		}
+		.foodgallery li:nth-child(even){
+			margin: 0 2%;
+		}
+		.foodgallery:after{
+			display: block;
+			content: "";
+			clear: both;
+		}
+	footer{
+		background: #202020;
+		padding: 30px 0;
+		border-top: 10px solid #151515;
+		margin-top: 40px;
+	}
+	footer h3{
+		margin: 0;
+		color: #555;
+		text-transform: uppercase;
+		font-size: 18px;
+	}
+	footer ul{
+		float: left;
+		width: 33%;
+		list-style-type: none;
+	}
+	footer:after{
+		display: block;
+		content: "";
+		clear: both;
+
+	}
+	footer li{
+		color: #aaa;
+		width: 80%;
+		margin: 20px 0;
+		line-height: 1.6em;
+	}
+	
+	.copyright{
+		clear: both;
+		padding-top: 30px;
+		margin-top: 30px;
+		width: 100%;
+		border-top: 2px solid #333;
+		color: #999;
+		font-size: 14px;
+	}
+
+
+
+
+		
+
+
+		@media screen and (max-width: 768px){
+			header nav{
+				float: none;
+			}
+			header h1.logo{
+				float: none;
+				margin: 0 auto 10px;
+			}
+			header nav li{
+				margin-left: 0;
+				width: 20%;
+				text-align: center;
+
+			}
+			.menu li{
+			list-style-type: none;
+			width: 96%;
+			float: none;
+			text-align: center;
+
+			
+		}
+		.foodgallery li{
+			list-style-type: none;
+			width: 48%;
+
+			
+		}
+		.menu li p{
+			text-align: left;
+			margin-left: 55px;
+			
+		}
+		
+
+
+		}
+		@media screen and (max-width: 492px){
+			header nav li a{
+				font-size: 15px;
+			}
+			.menus{
+				margin-top: -180px ;
+
+			}
+			.menu li h1{
+				font-size: 20px;
+			}
+			.menu li p{
+				font-size: 15px;
+			text-align: left;
+			margin-left: 0;
+			margin-left: 30px;
+			
+		}
+		.foodgallery h2{
+			font-size: 20px;
+		}
+		.foodgallery li{
+			list-style-type: none;
+			float: none;
+			width: 90%;
+			margin: 20px 5% !important;
+		}
+		footer ul{
+		float: none;
+		width: 100%;
+		border-top: 2px solid #333;
+	}
+
+	header{
+		padding-bottom: 0;
+
+	}
+	header nav li{
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+	header nav li a {
+		display: block;
+		text-align: center;
+		padding: 10px;
+		border-top: 1px solid #333;
+	}
+	header nav{
+		background-color: #555;
+	}
+	header .wrapper{
+		width: 100%;
+		padding: 0;
+	}
+	header .burger-nav{
+		width: 100%;
+		height: 45px;
+		background: url(images/burgermenu2.png)no-repeat 98% center;
+		cursor: pointer;
+
+
+	}
+	header nav li a{
+		color: white;
+	}
+	header nav ul{
+		height: 0;
+		overflow: hidden;
+	}
+	header nav ul.open{
+		height: auto;
+	}
+
+			
+
+
+
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="wrapper">
+			<h1 class="logo"></h1>
+			<nav>
+				<div class="burger-nav"></div>
+				<ul>
+					<li><a href="#home">Home</a></li>
+		<li><a href="#menu">Menu</a></li>
+		<li><a href="#foodgalery">about us</a></li>
+		<li><a href="#foodgalery">galery</a></li>
+		<li><a href="#foodgalery">connect</a></li>
+				</ul>
+			</nav>
+
+			
+		</div>
+	</header>
+	   
+		<div class="main-banner"> <img src="images/des9.jpg" alt="home image"> </div>
+		<div class="menus"> <img src="images/menustyle3.jpg" alt="menu image" ></div>
+	
+	<main class="wrapper">
+		<section class="menu">
+			<ul>
+				<li>
+			<h1>American Berbecue<span style="border-top: 1px solid black; display: inline-block; width: 30%; "></span>$2000</h1>
+			<p>Grilled meat smoothered into BBQ sauce</p>
+			<h1>American Berbecue<span style="border-top: 1px solid black; display: inline-block; width: 30%; "></span>$2000</h1>
+			<p>Grilled meat smoothered into BBQ sauce</p>
+			<h1>American Berbecue<span style="border-top: 1px solid black; display: inline-block; width: 30%; "></span>$2000</h1>
+			<p>Grilled meat smoothered into BBQ sauce</p>
+			<h1>American Berbecue<span style="border-top: 1px solid black; display: inline-block; width: 30%; "></span>$2000</h1>
+			<p>Grilled meat smoothered into BBQ sauce</p>
+			<h1>American Berbecue<span style="border-top: 1px solid black; display: inline-block; width: 30%; "></span>$2000</h1>
+			<p>Grilled meat smoothered into BBQ sauce</p>
+		</li>
+		<li>
+						<h1>American Berbecue<span style="border-top: 1px solid black; display: inline-block; width:30%; "></span>$2000</h1>
+			<p>Grilled meat smoothered into BBQ sauce</p>
+			<h1>American Berbecue<span style="border-top: 1px solid black; display: inline-block; width: 30%; "></span>$2000</h1>
+			<p>Grilled meat smoothered into BBQ sauce</p>
+			<h1>American Berbecue<span style="border-top: 1px solid black; display: inline-block; width: 30%;"></span>$2000</h1>
+			<p>Grilled meat smoothered into BBQ sauce</p>
+			<h1>American Berbecue<span style="border-top: 1px solid black; display: inline-block; width: 30%; "></span>$2000</h1>
+			<p>Grilled meat smoothered into BBQ sauce</p>
+			<h1>American Berbecue<span style="border-top: 1px solid black; display: inline-block; width: 30%; "></span>$2000</h1>
+			<p>Grilled meat smoothered into BBQ sauce</p>
+		</li>
+			</ul>
+
+			
+		</section>
+		<section class="foodgallery">
+			<h2>food gallery</h2>
+			<ul>
+				<li><img src="images/burger.webp" alt="food gallery"></li>
+				<li><img src="images/des7.jpg" alt="food gallery"></li>
+				<li><img src="images/des4.jpg" alt="food gallery"></li>
+				<li><img src="images/chickenbreast.jpg" alt="food gallery"></li>
+			
+			</ul>
+			
+		</section>
+	</main>
+	<footer>
+		<div class="wrapper">
+			<ul>
+				<li>
+					<h3>get in touch</h3> </li>
+					<li>Opposite Glass building located at Nowhereville</li>
+					<li>Tel: 08114450000</li>
+					<li>contact@samplemenu.com</li>
+			
+			</ul>
+			<ul>
+				<li><h3>about us</h3><li>
+				<li>
+					We are a team of passionate foodies</li>
+					<li>Our menu is inspired by the best dishes in town</li>
+					<li>We strive to provide excellent services</li>
+			</ul>
+			<ul>
+				<li><h3>follow us</h3></li>
+				<li><a href="fb://"><img src="images/face.jpg" alt="socialmedia icon" style="width: 30px; height: 30px; border-radius: 50%;"></a></li>
+					<li><a href="twitter://"><img src="images/x.jpg" alt="socialmedia icon" style="width: 30px; height: 30px; border-radius: 50%;"></a></li>
+
+				 <li><a href="instagram://"><img src="images/instagram.jpg" alt="socialmedia icon" style="width: 30px; height: 30px; border-radius: 50%;"></a></li>
+			</ul>
+			<div class="copyright">&copy; 2025 Jenny Global Plate. All rights reserved</div>
+		</div>
+	</footer>
+
+	<script src="menu.js">
+	</script>
+
+
+
+</body>
+</html>
